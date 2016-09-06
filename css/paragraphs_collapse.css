@@ -1,0 +1,21 @@
+/**
+ * @file
+ * Defines css styles for paragraphs_collapse.
+ */
+
+.paragraph-collapsed {
+  max-height: 100px;
+  overflow:hidden;
+}
+
+.paragraph-collapsible .paragraph-type-title:before {
+  content: "▼ ";
+}
+
+.paragraph-collapsed .paragraph-type-title:before {
+  content: "▶ ";
+}
+
+.paragraph-collapsed .paragraphs-subform {
+  opacity: .5;
+}

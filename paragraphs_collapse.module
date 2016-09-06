@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Module file and hooks for paragraphs_collapse module.
+ */
+
+/**
+ * Implements hook_field_widget_form_alter().
+ */
+function paragraphs_collapse_field_widget_form_alter(&$element, \Drupal\Core\Form\FormStateInterface $form_state, $context) {
+  // If this element is an inline paragraphs widget, add the js to collapse it.
+  if (get_class($context['widget']) == "Drupal\paragraphs\Plugin\Field\FieldWidget\InlineParagraphsWidget") {
+    $element['#attributes']['class'][] = 'paragraph-collapsible';
+    $element['#attached']['library'][] = 'paragraphs_collapse/paragraphs_collapse';
+  }
+}

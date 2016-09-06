@@ -1,0 +1,7 @@
+name: Paragraphs Collapse
+type: module
+description: Collapses paragraphs on edit forms for easy reordering.
+core: 8.x
+package: "Custom"
+dependencies:
+  - paragraphs
