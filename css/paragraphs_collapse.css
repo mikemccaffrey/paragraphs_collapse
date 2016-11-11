@@ -19,3 +19,129 @@
 .paragraph-collapsed .paragraphs-subform {
   opacity: .5;
 }
+
+/**
+ * Move the weight toggle and new collapse buttons into the thead.
+ */
+
+.field--widget-entity-reference-paragraphs .tabledrag-toggle-weight-wrapper {
+  position: relative;
+  top: 31px;
+  right: 10px;
+}
+
+.field--widget-entity-reference-paragraphs thead .tabledrag-hide {
+  color: #f5f5f2; /* Hide the Order text */
+}
+
+/**
+ * Tweak the core form element spacing so they look better in paragraphs.
+ */
+
+tr.odd .paragraph-collapsible .form-item,
+tr.even .paragraph-collapsible .form-item {
+  margin-bottom: 1em;
+}
+
+.field--widget-entity-reference-paragraphs .text-format-wrapper .filter-wrapper {
+  margin-top: -1em;
+}
+
+.paragraph-collapsible .fieldset-wrapper .form-item:first-child {
+  margin-top: 1em;
+}
+
+.paragraphs-dropbutton-wrapper {
+/*  margin-left: 24px; */
+  margin-bottom: 1em;
+}
+
+.field--widget-entity-reference-paragraphs .paragraph-type-title {
+  position: relative;
+  top: 5px;
+  margin-bottom: 15px;
+}
+
+.field--widget-entity-reference-paragraphs tr.draggable > td:nth-child(2) {
+  padding-left: 0;
+}
+
+.js .field--widget-entity-reference-paragraphs td.field-multiple-drag {
+  padding-top: 15px;
+}
+
+/**
+ * Tweak the backgrounds of paragraphs so you can better see them nest.
+ */
+
+.field--widget-entity-reference-paragraphs thead tr,
+.field--widget-entity-reference-paragraphs thead tr:hover {
+  border: 1px solid #d0d0d0;
+  background-color:rgba(0, 0, 0, 0.06);
+}
+
+.field--widget-entity-reference-paragraphs thead th {
+  border: 0;
+  background: none;
+}
+
+.field--widget-entity-reference-paragraphs tbody > tr,
+.field--widget-entity-reference-paragraphs tbody > tr:hover {
+  background-color:rgba(0, 0, 0, 0.02);
+  border-left: 1px solid #e6e4df;
+  border-right: 1px solid #e6e4df;
+}
+
+/**
+ * Draw more emphasis to the reorder flag.
+ */
+.field--widget-entity-reference-paragraphs .field-multiple-drag .tabledrag-changed {
+  color: #e09600;
+  font-size: 2em;
+  padding-left: 1px;
+}
+
+/**
+ * De-emphasize all of the field titles and descriptions.
+ */
+
+.field--widget-entity-reference-paragraphs .paragraph-type-title {
+  text-transform: none;
+  color: #666;
+}
+
+.field--widget-entity-reference-paragraphs label,
+.field--widget-entity-reference-paragraphs .form-item .description {
+  color: #999;
+  font-weight: normal;
+}
+
+.field--widget-entity-reference-paragraphs summary {
+  text-transform: none;
+  color: #666;
+  font-weight: normal;
+}
+
+.field--widget-entity-reference-paragraphs .form-type-checkbox label {
+  color: black;
+}
+
+.field--widget-entity-reference-paragraphs .button {
+  opacity: .5;
+}
+.field--widget-entity-reference-paragraphs .button:hover {
+  opacity: 1;
+}
+
+/**
+ * Emphasize the headline text field for better visual scanning.
+ */
+
+.field--widget-entity-reference-paragraphs .field--name-field-headline-text input.form-text {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.field--widget-entity-reference-paragraphs .field--widget-entity-reference-paragraphs .field--name-field-headline-text input.form-text {
+  font-size: 1.1em;
+}

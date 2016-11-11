@@ -37,6 +37,7 @@
 
       // Add collapse all and expand all links next to the show row weights.
       $('.field--widget-entity-reference-paragraphs .tabledrag-toggle-weight-wrapper')
+        .once('paragraphs-collapse-links')
         // Only add links to draggable table children that contain paragraphs.
         .filter(function () {
           return $(this).closest('.form-wrapper').hasClass('field--widget-entity-reference-paragraphs');
